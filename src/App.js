@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import MovieCard from "./component/movieCard";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+          <div className="App">
+              <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+              <div className="w3-container w3-blue">
+                  <h2 style={{fontWeight:"bold", fontFamily:"serif", textAlign:"start", paddingLeft:"20px"}}>CineFlix</h2>
+              </div>
+              <MovieCard/>
+          </div>
+      </>
+
   );
 }
 
